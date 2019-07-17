@@ -4,7 +4,7 @@ Alexa skill with Alexa.Net dll
 Build alexa skill  
 # Technology 
 - Visual Studio 2017
-- Azure Functon
+- Azure Function
 - ngrok
 - amazon developer account 
 # Setup

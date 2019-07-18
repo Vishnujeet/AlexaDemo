@@ -17,7 +17,6 @@ namespace DemoSample
             var request = new RestRequest(Method.GET);
             FieldState fieldState = null;
             var accesstoken = GetToken();
-            request.AddHeader("Postman-Token", "39cf49aa-bcf7-43bd-a694-d3c02d3b7014");
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Authorization", $"Bearer {accesstoken.token}");
@@ -61,12 +60,9 @@ namespace DemoSample
             request.AddHeader("Connection", "keep-alive");
             request.AddHeader("content-length", "79");
             request.AddHeader("accept-encoding", "gzip, deflate");
-            request.AddHeader("Host", $"{baseURL}");
-            request.AddHeader("Postman-Token",
-                "<ps token>");
+            request.AddHeader("Host", $"{baseURL}");          
             request.AddHeader("Cache-Control", "no-cache");
             request.AddHeader("Accept", "*/*");
-            request.AddHeader("User-Agent", "PostmanRuntime/7.15.0");
             request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
             request.AddHeader("Authorization", "Basic <your email id and pwassword encoded in base64>");
             request.AddParameter("undefined",
